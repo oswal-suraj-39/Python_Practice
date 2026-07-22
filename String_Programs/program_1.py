@@ -2,3 +2,9 @@
 string = input("enter a string: ")
 upper = 0
 lower = 0
+
+for s in string:
+    if s.isupper():
+        upper += 1
+    elif s.islower():
+        lower += 1
