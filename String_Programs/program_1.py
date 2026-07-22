@@ -8,3 +8,6 @@ for s in string:
         upper += 1
     elif s.islower():
         lower += 1
+        
+print("total uppercase is ", upper)
+print("total lowercase is ", lower)
