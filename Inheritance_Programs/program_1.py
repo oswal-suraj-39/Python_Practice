@@ -37,3 +37,7 @@ class Manager(Employee):
         super().display()
         print("Bonus: ",self.bonus)
         print("Total Salary: ",self.salary + self.bonus)
+        
+n = int(input("enter number of managers: "))
+managers = []
+total_salary = []
