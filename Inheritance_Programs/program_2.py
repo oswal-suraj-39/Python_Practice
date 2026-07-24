@@ -27,3 +27,13 @@ class Test(Student):
         print("Math         :", self.math)
         print("Science      :", self.sci)
         print("Total Marks  :", self.total)
+        
+# Create objects
+test1 = Test(1, "Ashish", 20, "Male", 80, 87, 75)
+test2 = Test(2, "Ram", 21, "Male", 83, 79, 80)
+test3 = Test(3, "Suraj", 21, "Male", 74, 85, 80)
+
+# Display results
+test1.display()
+test2.display()
+test3.display()
