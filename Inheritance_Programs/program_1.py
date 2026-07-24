@@ -48,3 +48,7 @@ for i in range(n):
     manager.accept()
     managers.append(manager)
     total_salary.append(manager.salary + manager.bonus)
+    
+max_salary = max(total_salary)
+index = total_salary.index(max_salary)
+managers[index].display()
