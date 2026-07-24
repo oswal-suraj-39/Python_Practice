@@ -41,3 +41,10 @@ class Manager(Employee):
 n = int(input("enter number of managers: "))
 managers = []
 total_salary = []
+
+for i in range(n):
+    print(f"\n----- Enter details for manager {i+1} -----")
+    manager = Manager()
+    manager.accept()
+    managers.append(manager)
+    total_salary.append(manager.salary + manager.bonus)
