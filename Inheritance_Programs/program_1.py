@@ -23,3 +23,17 @@ class Employee:
         print("Employee Name: ",self.name)
         print("Department Name: ",self.department)
         print("Salary: ",self.salary)
+        
+class Manager(Employee):
+    def __init__(self):
+        super().__init__()
+        self.bonus = 0
+
+    def accept(self):
+        super().accept()
+        self.bonus = int(input("Enter bonus: "))
+
+    def display(self):
+        super().display()
+        print("Bonus: ",self.bonus)
+        print("Total Salary: ",self.salary + self.bonus)
