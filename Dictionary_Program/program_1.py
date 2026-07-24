@@ -11,3 +11,12 @@ def isKey (di, key):
         print(di)
     else:
         print("key is not exist")
+        
+di = {1: "suraj", 
+      2: "ram", 
+      3: "krishna", 
+      4: "ashish", 
+      5: "taiyo"}
+
+key = int(input("enter a key number: "))
+isKey(di, key)
