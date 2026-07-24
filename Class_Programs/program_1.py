@@ -7,3 +7,7 @@ class Strings:
     
     def print_String(self):
         print(self.string.upper())
+        
+objStr = Strings()
+objStr.get_String()
+objStr.print_String()
