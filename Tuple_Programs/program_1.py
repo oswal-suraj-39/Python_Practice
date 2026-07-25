@@ -9,5 +9,6 @@ for i in tuple1:
     else:
         dict1[i] = 1
         
+print("dict1   : ", dict1)        
 print("elements: ", tuple(dict1.keys()))
 print("count   : ", tuple(dict1.values()))
