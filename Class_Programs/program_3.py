@@ -14,3 +14,15 @@ class rectangle:
         return result2
     
 rect = rectangle()
+
+r1 = rect.area()
+r2 = rect.perimeter()
+
+if r1 == r2:
+    print("both are same")
+    print("area of rectangle: ",r1)
+    print("perimeter of rectangle: ",r2)
+else:
+    print("both are not same")
+    print("area of rectangle: ",r1)
+    print("perimeter of rectangle: ",r2)
