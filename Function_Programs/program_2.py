@@ -1,0 +1,1 @@
+# Write an anonymous function to find area of square and rectangle.
