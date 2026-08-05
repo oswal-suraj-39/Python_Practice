@@ -14,3 +14,12 @@ def factorial(num):
     for i in range(1, num+1):
         result = result * i
     print(result)
+    
+num = int(input("enter a number: "))
+
+if is_prime(num):
+    print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")
+    
+factorial(num)
