@@ -1,0 +1,1 @@
+# Write a Python program to accept two lists and merge the two lists into list of tuple
