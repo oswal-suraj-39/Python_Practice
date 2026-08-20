@@ -1,37 +1,23 @@
-# Python Program to Create a Class in which One Method Accepts a String from the 
-# User and Another method Prints it. 
-# Define a class named Country which has a method called print Nationality. 
-# Define subclass named state from Country which has a method called printState. 
-# Write a method to print state, country and nationality.
+# Write a Python class named Student with two attributes student_name, marks. 
+# Modify the attribute values of the said class and 
+# print the original and modified values of the said attributes. 
 
-class country: 
-    def __init__(self):
-        country = ""
-        nationality = ""
+class student:
+    student_name = "suraj"
+    marks = 90
     
-    def acceptNationality(self):
-        self.country = input("enter country: ")
-        self.nationality = input("enter nationality: ")
-
-    def printNationality(self):
-        print("Country: ", self.country)
-        print("Nationality: ",self.nationality)
+    def modify(self):
         
+        print("-----original values-----")
+        print("student name  : ", self.student_name)
+        print("student marks : ", self.marks)
         
-class state(country):
-    def __init__(self):
-        self.state = ""
+        self.student_name = input("enter new student name  : ")
+        self.marks = int(input("enter new student marks : "))
+        
+        print("-----modified values-----")
+        print("student name  : ", self.student_name)
+        print("student marks : ", self.marks)
 
-    def acceptState(self):
-        self.state = input("enter state: ")
-
-    def printState(self):
-        print("State: ", self.state)
-
-s = state()
-
-s.acceptNationality()
-s.acceptState()
-
-s.printNationality()
-s.printState()
+s = student()
+s.modify()

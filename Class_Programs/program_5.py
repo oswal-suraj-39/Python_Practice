@@ -1,23 +1,24 @@
-# Write a Python class named Student with two attributes student_name, marks. 
-# Modify the attribute values of the said class and 
-# print the original and modified values of the said attributes. 
+# Write a python program to create a class Circle and Compute the Area 
+# and the circumferences of the circle.(use parameterized constructor) 
 
-class student:
-    student_name = "suraj"
-    marks = 90
+class circle:
     
-    def modify(self):
-        
-        print("-----original values-----")
-        print("student name  : ", self.student_name)
-        print("student marks : ", self.marks)
-        
-        self.student_name = input("enter new student name  : ")
-        self.marks = int(input("enter new student marks : "))
-        
-        print("-----modified values-----")
-        print("student name  : ", self.student_name)
-        print("student marks : ", self.marks)
+    area = 0
+    circumferences = 0
+    
+    def __init__(self, r):
+        self.radius = r
+        self.area = 0
+        self.circumferences = 0
 
-s = student()
-s.modify()
+    def compute(self):
+        self.area = 3.14 * self.radius**2
+        self.circumferences = 2 * 3.14 * self.radius
+
+r = int(input("enter a radius: "))    
+c = circle(r)
+
+c.compute()
+
+print("area of circle: ", c.area)
+print("circumferences of circle: ",c.circumferences)
