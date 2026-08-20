@@ -6,3 +6,11 @@ list1 = []
 tuple1 = ("10", "20", "30", "40", "50")
 
 print("Original tuple values: ", tuple1)
+
+for i in tuple1:
+    n = int(i)
+    list1.append(n)
+
+tuple1 = tuple(list1)
+
+print("New tuple values:", tuple1)
