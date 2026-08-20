@@ -16,3 +16,22 @@ class country:
     def printNationality(self):
         print("Country: ", self.country)
         print("Nationality: ",self.nationality)
+        
+        
+class state(country):
+    def __init__(self):
+        self.state = ""
+
+    def acceptState(self):
+        self.state = input("enter state: ")
+
+    def printState(self):
+        print("State: ", self.state)
+
+s = state()
+
+s.acceptNationality()
+s.acceptState()
+
+s.printNationality()
+s.printState()
