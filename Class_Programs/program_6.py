@@ -8,3 +8,16 @@ class rectangle:
         self.width = w
         self.area = 0
         self.perimeter = 0
+        
+    def compute(self):
+        self.area = self.length * self.width
+        self.perimeter = 2 * (self.length + self.width)
+        
+length = int(input("enter a length: "))
+width = int(input("enter a width: "))
+
+r = rectangle(length, width)
+r.compute()
+
+print("area of rectangle: ",r.area)
+print("perimeter of rectangle: ",r.perimeter)
