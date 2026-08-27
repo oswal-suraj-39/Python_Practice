@@ -18,4 +18,15 @@ year = Entry(top)
 
 button = Button(top, text="Calculate Age", command=calculate_age)
 
+label1.grid(row=0, column=0)
+day.grid(row=0, column=1)
+
+label2.grid(row=1, column=0)
+month.grid(row=1, column=1)
+
+label3.grid(row=2, column=0)
+year.grid(row=2, column=1)
+
+button.grid(row=3, columnspan=2)
+
 top.mainloop()
