@@ -3,6 +3,19 @@
 
 from tkinter import Tk, Label, Entry, Button
 
+def calculate_age():
+    from datetime import date
+    today = date.today()
+    
+    birth_day = int(day.get())
+    birth_month = int(month.get())
+    birth_year = int(year.get())
+
+    age = today.year - birth_year - ((today.month, today.day) < (birth_month, birth_day))
+
+    from tkinter import messagebox
+    messagebox.showinfo("Age", f"You are {age} years old.")
+
 top = Tk()
 top.geometry("300x200")
 top.title("Age Calculator")
